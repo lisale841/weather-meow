@@ -6,10 +6,12 @@ import Header from './components/header/Header'
 import Home from './components/home/Home'
 import NavBar from './components/navBar/NavBar'
 import Weather from './components/weather/Weather'
+import React, { useState} from 'react';
 
 function App() {
 
   // const test = search('westminster ca');
+  const [state, setState] = useState({});
 
   return (
     <div className="container">
@@ -17,8 +19,8 @@ function App() {
       <Router>
         <NavBar/>
          <Routes>
-          <Route path ='/' element={<Home/>}/>
-          <Route path = '/currentWeather' element={<Weather/>}/>
+          <Route path ='/' element={<Home setState={setState}/>}/>
+          <Route path = '/currentWeather' element={<Weather state={state}/>}/>
         </Routes>
       </Router>
     </div>

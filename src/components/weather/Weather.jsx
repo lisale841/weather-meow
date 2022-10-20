@@ -3,7 +3,10 @@ import './weather.css';
 
 
 
-const Weather = () => {
+
+const Weather = ({state}) => {
+
+  console.log(state);
   return(
     <div className = 'homeBackground'>
      <div className= 'row rowSpacing'>
@@ -17,7 +20,11 @@ const Weather = () => {
       <div className ='logoFont'>
         WEATHER-MEOW
       </div>
-
+      <div>
+        {state && state?.current?.temp_f}
+        {state && state?.current?.wind_mph}
+        {state && state?.current?.feelslike_f}
+      </div>
       
      </div>
        

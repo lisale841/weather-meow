@@ -2,12 +2,13 @@ import React, {useState, useEffect} from 'react';
 import './home.css';
 
 import {search} from '../../api/api'
+import { Link, Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 
 
 
-const Home = () => {
+const Home = ({setState}) => {
  
-  const [state, setState] = useState();
+  
   const [city, setCity] = useState('');
   const [usState, setUsState] = useState('');
   console.log('city:', city);
@@ -22,16 +23,15 @@ const Home = () => {
     setUsState (event.target.value);
   };
 
-  
+  const navigate = useNavigate();
+
   const handleSubmit = async(event) => {
     event.preventDefault();
-    // const test = await search(`${city} ${usState}`);
-    // setState(test);
+    
+    const test = await search(`${city} ${usState}`);
+    setState(test);
+    navigate('/currentWeather');
   }
-
-  useEffect(()=>{
-    console.log(state)
-  },[state]);
 
   // const test = search('westminster ca');
   return(
@@ -62,14 +62,12 @@ const Home = () => {
           onChange={handleUsStateChange}
           /> <br/>
          </label>   
-         <input type ="submit" value="SUBMIT" className ='submitBtn' />
+         <input 
+         type = "submit" 
+         value="SUBMIT" 
+         className ='submitBtn' />
         </form>
-      
-      <div>
-        {state && state.current.temp_f}
-        {state && state.current.wind_mph}
-        {state && state.current.feelslike_f}
-      </div>
+    
       
       
      </div>
