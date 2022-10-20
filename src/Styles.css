@@ -38,3 +38,11 @@
 .textStyle {
   font-family: 'Merriweather Sans', sans-serif;
 }
+
+.tempText {
+  font-size : 30px;
+  text-align:center;
+  font-weight:bold;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
