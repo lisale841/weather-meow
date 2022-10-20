@@ -3,7 +3,7 @@
   align-items: flex-start;
   background-color: #D9F1FF;
   padding-left:30px;
-  
+
 }
 
 /* .navBtnSpacing {
@@ -31,4 +31,15 @@
 
 li{
   list-style-type: none;
+}
+
+
+@media screen and (max-width: 736px){
+ .navBar{
+  padding-left:25%;
+ }
+
+ .navCircle{
+  height:20px;
+ }
 }
