@@ -12,17 +12,15 @@ const NavBar = () => {
   return(
     <div className ='navBar'>
       <li>
-        <button className ='navBtnSpacing' onClick={() => onclick('/')}>
-          <div className ='navCircle'>
+        <button className ='navCircle' onClick={() => onclick('/')}>
+          {/* <div className ='navCircle'> */}
           <img src ={require('../../images/home.png')} alt='homeIcon' className= 'homeBtn'/>
-          </div>
+          {/* </div> */}
         </button>
       </li>
       <li>
-        <button className ='navBtnSpacing' onClick={() => onclick("/currentWeather")} >
-          <div className ='navCircle'>
+        <button className ='navCircle' onClick={() => onclick("/currentWeather")} > 
           <img src ={require('../../images/pawLogo.jpg')} alt='pawIcon' className= 'homeBtn'/>
-          </div>
         </button>
       </li>
         <Outlet />
