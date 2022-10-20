@@ -1,0 +1,26 @@
+.container { 
+ max-width: 900px;
+ margin: auto; 
+
+}
+
+.row{
+  width: 100%;
+}
+
+.rowSpacing{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* @media screen and (min-width: 736px){
+  .container {
+    max-width: ;
+    margin: 0  auto;
+  }
+}
+
+@media screen and (max-width:) */

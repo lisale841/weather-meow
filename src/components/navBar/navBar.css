@@ -1,0 +1,32 @@
+.navBar{
+  display: flex;
+  align-items: flex-start;
+  background-color: #D9F1FF;
+}
+
+/* .navBtnSpacing {
+  margin: 20px;
+  margin-left: 40px;
+  width: 200px;
+} */
+
+.navCircle{
+  display: inline-block;
+  margin-top: 22px;
+  margin-left:20px;
+  height:32px ;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-align: center;
+  overflow:hidden;
+}
+
+.homeBtn{
+  width: 100%;
+  height:100%;
+  object-fit:contain;
+}
+
+li{
+  list-style-type: none;
+}
