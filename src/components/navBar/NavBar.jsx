@@ -8,7 +8,12 @@ const NavBar = () => {
 
   onclick = path => {
     navigate(path)
+
+ 
   }
+
+ 
+
   return(
     <div className ='navBar'>
       <li>
@@ -19,7 +24,7 @@ const NavBar = () => {
         </button>
       </li>
       <li>
-        <button className ='navCircle' onClick={() => onclick("/currentWeather")} > 
+        <button className ='navCircle' onClick={() => onclick("/favorites")} > 
           <img src ={require('../../images/pawLogo.jpg')} alt='pawIcon' className= 'homeBtn'/>
         </button>
       </li>

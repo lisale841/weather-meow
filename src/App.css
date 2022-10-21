@@ -16,7 +16,7 @@
 }
 
 
-@media screen and (max-width: 736px){
+@media screen and (min-width: 736px){
   .container {
     max-width: 736px;
     margin: 0 auto;

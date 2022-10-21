@@ -14,11 +14,11 @@ const Weather = ({state}) => {
           {state && state?.location?.name}<br/>
           {state && state?.location?.region}
          </div>
-         <div className='circle'>
+         <div className='circleWeather'>
            <img src ={require('../../images/sunny-cat.jpg')} alt='cat-doodle' className= 'imagesCircle'/>
          </div>
          <div className ='logoFont'>
-            WEATHER-MEOW
+            WEATHER-MEOW 🐾
          </div>
          <div className ='tempText textStyle'>
            {state && state?.current?.temp_f}°
@@ -27,7 +27,10 @@ const Weather = ({state}) => {
            {state && state?.current?.condition?.text}
            <img src = {state && state?.current?.condition?.icon} alt='weatherIcon' />
          </div>
-   
+         <button className='addBtn'>
+         ➕</button>
+        
+    
       </div>   
     </div>
 

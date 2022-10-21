@@ -21,6 +21,7 @@
   border: 1px solid black;
   text-align: center;
   overflow:hidden;
+  -webkit-appearance: none;
 }
 
 .homeBtn{
@@ -33,13 +34,13 @@ li{
   list-style-type: none;
 }
 
-
-@media screen and (max-width: 736px){
+/* 
+@media screen and (max-width: 736px){ */
  /* .navBar{
   padding-left:25%;
  } */
 
- .navCircle{
+ /* .navCircle{
   height:20px;
  }
-}
+} */

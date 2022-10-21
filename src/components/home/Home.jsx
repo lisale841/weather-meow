@@ -41,7 +41,7 @@ const Home = ({setState}) => {
           <img src ={require('../../images/cat-doodle.png')} alt='cat-doodle' className= 'imagesCircle'/>
        </div>
        <div className ='logoFont'>
-        WEATHER-MEOW
+       WEATHER-MEOW 🐾
        </div>
         <form onSubmit= {handleSubmit}> 
          <label>
