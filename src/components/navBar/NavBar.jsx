@@ -19,13 +19,15 @@ const NavBar = () => {
       <li>
         <button className ='navCircle' onClick={() => onclick('/')}>
           {/* <div className ='navCircle'> */}
-          <img src ={require('../../images/home.png')} alt='homeIcon' className= 'homeBtn'/>
+          🏠
+          {/* <img src ={require('../../images/home.png')} alt='homeIcon' className= 'homeBtn'/> */}
           {/* </div> */}
         </button>
       </li>
       <li>
         <button className ='navCircle' onClick={() => onclick("/favorites")} > 
-          <img src ={require('../../images/pawLogo.jpg')} alt='pawIcon' className= 'homeBtn'/>
+        🐾
+          {/* <img src ={require('../../images/pawLogo.jpg')} alt='pawIcon' className= 'homeBtn'/> */}
         </button>
       </li>
         <Outlet />
