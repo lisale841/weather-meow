@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './weather.css';
-
+import useFavoritesStore from '../../hooks/useFavoritesStore';
 
 
 
 const Weather = ({state}) => {
  
-  console.log(state);
+  console.log('state',state);
+  const {setFavorites} = useFavoritesStore();
+
+  const addToFavorites = () => {
+    setFavorites(state);    
+  };
+
   return(
     <div className = 'homeBackground'>
      <div className= 'row rowSpacing'>
@@ -27,7 +33,7 @@ const Weather = ({state}) => {
            {state && state?.current?.condition?.text}
            <img src = {state && state?.current?.condition?.icon} alt='weatherIcon' />
          </div>
-         <button className='addBtn'>
+         <button className='addBtn' onClick={addToFavorites}>
          ➕</button>
         
     

@@ -2,11 +2,13 @@ import React from 'react';
 import './favorites.css';
 import './../home/home.css';
 
-
+import useFavoritesStore from '../../hooks/useFavoritesStore';
 
 
 const Favorites = () => {
- 
+  const {getFavorites} = useFavoritesStore();
+
+  console.log('getFavorites', getFavorites());
   // console.log(state);
   return(
     <div className = 'homeBackground'>
