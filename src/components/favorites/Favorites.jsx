@@ -10,6 +10,16 @@ const Favorites = () => {
 
   console.log('getFavorites', getFavorites());
   // console.log(state);
+
+  let totalFavorites = getFavorites();
+
+  if(totalFavorites == null) {
+   console.log('no purr-ty locations found')
+  } else {
+ console.log ('favorites:',totalFavorites);
+  }
+
+  
   return(
     <div className = 'homeBackground'>
      <div className= 'row rowSpacing'>
