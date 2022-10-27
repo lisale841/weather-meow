@@ -22,3 +22,11 @@ input{
       background-color: #36362E;
       height:32px;
   }
+
+
+  .favoritesBox{
+    border: 1px solid black;
+    width: 350px;
+    height: 100px;
+    background-color: white;
+  }

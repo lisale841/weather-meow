@@ -16,12 +16,11 @@ const Favorites = () => {
          <div className= 'locationText textStyle favoritesText'>
          YOUR MEOW LIST
          </div>
-         <div className='circleWeather'>
-           <img src ={require('../../images/sunny-cat.jpg')} alt='cat-doodle' className= 'imagesCircle'/>
-         </div>
-         <div className ='logoFont'>
-            WEATHER-MEOW
-         </div>
+        <div className = 'favoritesBox'>
+          <div>
+
+          </div>
+        </div>
     
       </div>   
     </div>
