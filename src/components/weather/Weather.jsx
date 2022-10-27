@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './weather.css';
 import useFavoritesStore from '../../hooks/useFavoritesStore';
+import {useNavigate, Outlet} from "react-router-dom";
 
 
 
@@ -9,8 +10,11 @@ const Weather = ({state}) => {
   console.log('state',state);
   const {setFavorites} = useFavoritesStore();
 
+  const navigate = useNavigate();
   const addToFavorites = () => {
-    setFavorites(state);    
+    setFavorites(state); 
+    navigate('/favorites');
+
   };
 
   return(

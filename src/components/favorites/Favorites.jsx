@@ -8,16 +8,21 @@ import useFavoritesStore from '../../hooks/useFavoritesStore';
 const Favorites = () => {
   const {getFavorites} = useFavoritesStore();
 
-  console.log('getFavorites', getFavorites());
+  // console.log('getFavorites', getFavorites());
   // console.log(state);
 
+  function totalFavoritesShown() {
   let totalFavorites = getFavorites();
-
-  if(totalFavorites == null) {
-   console.log('no purr-ty locations found')
+   if(totalFavorites == null) {
+   return  ( <div className = 'favoritesBox'> No Purr-ty Locations Tracked
+   </div>)
   } else {
  console.log ('favorites:',totalFavorites);
-  }
+ 
+  
+}
+}
+
 
   
   return(
@@ -26,10 +31,8 @@ const Favorites = () => {
          <div className= 'locationText textStyle favoritesText'>
          YOUR MEOW LIST
          </div>
-        <div className = 'favoritesBox'>
-          <div>
-
-          </div>
+        <div >
+      {totalFavoritesShown()}
         </div>
     
       </div>   
