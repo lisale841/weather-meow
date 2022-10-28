@@ -7,18 +7,19 @@ import useFavoritesStore from '../../hooks/useFavoritesStore';
 
 const Favorites = () => {
   const {getFavorites} = useFavoritesStore();
-
-  // console.log('getFavorites', getFavorites());
-  // console.log(state);
-
   function totalFavoritesShown() {
   let totalFavorites = getFavorites();
    if(totalFavorites == null) {
-   return  ( <div className = 'favoritesBox'> No Purr-ty Locations Tracked
+   return  ( <div className = 'favoritesBox'> No Purr-ty Weather Tracked
    </div>)
   } else {
- console.log ('favorites:',totalFavorites);
- 
+     return totalFavorites.map((favorites, index) =>
+    <div className ='favoritesBox' key={index} >
+      {favorites.location.name} 
+      <br/>
+      {favorites.location.region}
+    </div>
+  ); 
   
 }
 }
