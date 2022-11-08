@@ -12,8 +12,10 @@ const Favorites = () => {
 
   const handleClick = event => {
     console.log(event.currentTarget.id);
-    navigate('weather/'+ event.currentTarget.id);
-    console.log('' + event.currentTarget.id)
+    navigate('/'+ event.currentTarget.id);
+    
+    
+    console.log('/' + event.currentTarget.id)
 
   };
 
