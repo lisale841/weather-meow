@@ -27,6 +27,7 @@ const Favorites = () => {
    </div>)
   } else {
      return totalFavorites.map((favorites, index) =>
+   
     <div className ='favoritesBox' key={index} id={favorites.location.name} onClick= {handleClick}>
       {favorites.location.name} 
       <br/>
